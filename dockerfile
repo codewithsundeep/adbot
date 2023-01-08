@@ -6,4 +6,4 @@ RUN npm install
 
 COPY . /app
 EXPOSE 3000
-CMD xvfb-run --server-args=":1 -screen 0 1024x768x24" npm start
+CMD xvfb-run -a --server-args="-screen 0 1280x800x24 -ac -nolisten tcp -dpi 96 +extension RANDR" npm start
