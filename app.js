@@ -30,5 +30,7 @@ function start(){
 }
 app.get("/",(req,res)=>{
     res.send("wow")
+    start()
+    console.log("wow")
 })
 app.listen(process.env.PORT)
