@@ -11,7 +11,7 @@ const userAgents = require("user-agents");
 function start(){
     (
         async()=>{
-            const b = await puppeteer.launch({headless:true,executablePath:executablePath(),args:[
+            const b = await puppeteer.launch({headless:false,executablePath:executablePath(),args:[
                 "--no-sandbox",
                 "--disable-gpu"
     
